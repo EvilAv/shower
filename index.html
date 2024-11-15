@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Shower Presentation Engine</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <link rel="stylesheet" href="shower/themes/ribbon/styles/styles.css">
+    <style>
+        .shower {
+            --slide-ratio: calc(16 / 9);
+        }
+        .slide::after{
+            display: none;
+        }
+        .slide {
+            color: #202729;
+        }
+    </style>
+</head>
+<body class="shower list">
+
+    <header class="caption">
+        <h1>Компьютерная графика 
+            и анимация в кино. <br>
+            Разработка и наложение эффектов	</h1>
+        <p>Вуколов Андрей ИУ3-31М</p>
+    </header>
+
+    <section class="slide edge">
+        <img class="cover" src="./pictures/edge-cover.png" alt="UwU">
+        <h2>Компьютерная графика 
+            и анимация в кино. <br>
+            Разработка и наложение эффектов	
+            </h2>
+        <p>Вуколов Андрей ИУ3-31М</p>
+        <style>
+            .edge h2{
+                font-size: 60px;
+                color: white;
+            }
+            .edge p {
+                color: white;
+                margin-top: 2em;
+            }
+        </style>
+    </section>
+
+    <section class="slide list">
+        <img src="./pictures/list-cover.png" alt="UwU" class="cover">
+        <div class="list-wrapper">
+            <h2>Содержание</h2>
+            <ul>
+                <li>Что такое компьютерная графика</li>
+                <li>(Не)много истории</li>
+                <li>VFX</li>
+                <li>Софт</li>
+                
+            </ul>
+        </div>
+            <style>
+                .list-wrapper{
+                    display: flex;
+                    align-items: center;
+                    height: 100%;
+                    gap: 280px;
+                }
+                .list h2{
+                    color: #202729;
+                    font-style: normal;
+                }
+                .list ul{
+                    color: white;
+                    font-size: 23px;
+                }
+                .list li::before{
+                    color: white;
+                }
+            </style>
+    </section>
+
+    <section class="slide white page" id="page0">
+        <h2>Что такое компьютерная графика</h2>
+        <div class="columns two">
+            <img src="./pictures/img-0-0.png" alt="UwU">
+            <p>Компьютерная графика (computer-generated imagery, CGI) - это неподвижные или движущиеся изображения, сгенерированные компьютером. Можно выделить двухмерную и трехмерную графику.
+            </p>
+        </div>
+        <style>
+            .page h2{
+                color: #202729;
+                letter-spacing: 2px;
+                font-size: 40px;
+            }
+            #page0 img{
+                height: 260px;
+            }
+            #page0 p{
+                font-size: 19px;
+            }
+        </style>
+    </section>
+
+    <section class="slide green">
+        <img src="./pictures/history-cover.png" alt="UwU" class="cover">
+        <h2>(Не)много истории</h2>
+        <style>
+            .green h2{
+                margin-top: 220px;
+                color:#202729;
+                font-size: 60px;
+                letter-spacing: 3px;
+            }
+        </style>
+    </section>
+
+    <section class="slide white page" id="page1">
+        <h2>Доисторические времена</h2>
+        <div class="columns two">
+            <p>До появления цифровых технологий спецэффекты в кино включали такие техники, как миниатюры, комбинированные съемки и покадровая анимации. К примеру, миниатюры использовались для создания масштабных сцен, таких как разрушение городов, а покадровая анимация применялась для оживления фантастических существ. Двойная экспозиция и matte painting позволяли комбинировать отснятые кадры с нарисованными фонами или другими элементами.
+            </p>
+            <img src="./pictures/img-1-0.png" alt="UwU">
+        </div>
+        <style>
+            #page1 img{
+                height: 300px;
+                margin-top: -40px;
+            }
+            #page1 h2{
+                width: 300px;
+            }
+            #page1 p{
+                font-size: 15px;
+                line-height: 20px;
+            }
+        </style>
+    </section>
+
+    <section class="slide white page" id="page2">
+        <h2>Головокружение (1958)</h2>
+        <div class="columns two">
+            <p>Первым фильмом с элементами компьютерной графики можно считать «Головокружение» Альфреда Хичкока. Для фильма были созданы титры, в которых обыгрывался спуск по бесконечной лестнице.
+            </p>
+            <img src="./pictures/img-2-0.png" alt="UwU" id="img-2-0">
+            <img src="./pictures/img-2-1.png" alt="UwU" id="img-2-1">
+        </div>
+        <style>
+            #page2 h2{
+                width: 300px;
+            }
+            #img-2-0{
+                position: absolute;
+                top: 65px;
+                height: 250px;
+                right: 120px;
+            }
+            #img-2-1{
+                position: absolute;
+                top: 300px;
+                height: 250px;
+                right: 80px;
+            }
+            #page2 p{
+                font-size: 15px;
+                line-height: 20px;
+                width: 300px;
+            }
+        </style>
+    </section>
+
+    <section class="slide white page" id="page3">
+        <h2>Мир Дикого Запада <br>(1973)</h2>
+        <div class="columns two">
+            <p>В 1973 выходит фильм «Мир Дикого Запада» (Westworld), в котором впервые совместили цифровую анимацию с реальными съёмками. Пикселизированная картинка использовалась чтобы показать мир глазами андроида.
+            </p>
+            <img src="./pictures/img-3-0.png" alt="UwU">
+        </div>
+        <style>
+            #page3 p{
+                font-size: 15px;
+                line-height: 20px;
+                width: 330px;
+            }
+            #page3 img{
+                height: 240px;
+                margin-left: -50px;
+            }
+        </style>
+    </section>
+
+    <section class="slide white page" id="page4">
+        <h2>Трон (1982)</h2>
+        <div class="columns two">
+            <p>Первый фильм с продолжительной (около 15 минут) сценой полностью сгенерированной на компьютере (гонки на светоциклах).
+                Фильм был номинирован на Оскар в двух номинациях: лучший дизайн костюмов и лучший звук. Академия специально не стала включать «Трон» в номинацию на лучшие визуальные эффекты, потому что столь сильное использование компьютеров можно считать обманом.
+                </p>
+        </div>
+        <img src="./pictures/img-4-0.png" alt="" id="img-4-0">
+        <img src="./pictures/img-4-1.png" alt="" id="img-4-1">
+        <style>
+            #page4 h2{
+                width: 150px;
+            }
+            #page4 p{
+                font-size: 15px;
+                line-height: 20px;
+                width: 250px;
+            }
+            #img-4-0{
+                position: absolute;
+                top: 65px;
+                height: 250px;
+                right: 100px;
+            }
+            #img-4-1{
+                position: absolute;
+                top: 300px;
+                height: 250px;
+                right: 30px;
+            }
+        </style>
+    </section>
+
+    <section class="slide white page" id="page5">
+        <h2>90-е</h2>
+        <div class="columns two">
+            <ul>
+                <li>Парк Юрского периода (1993)</li>
+                <li>История игрушек (1995)</li>
+                <li>Матрица (1999)</li>
+                <li>Бойцовский клуб (1999)</li>             
+            </ul>
+        </div>
+        <img src="./pictures/img-5-0.png" alt="" id="img-5-0">
+        <img src="./pictures/img-5-1.gif" alt="" id="img-5-1">
+        <style>
+            #img-5-0{
+                position: absolute;
+                top: 65px;
+                height: 280px;
+                right: 50px;
+            }
+            #img-5-1{
+                position: absolute;
+                top: 350px;
+                height: 175px;
+                right: 150px;
+            }
+        </style>
+    </section>
+
+    <section class="slide white page" id="page6">
+        <h2>Властелин Колец: Две Крепости <br>(2002)</h2>
+        <div class="columns two">
+            <p>Один из первых фильмов с реалистичным полностью анимированным персонажем, который активно взаимодействует с актерами в кадре. Для создания Голлума использовалась технология motion capture (захват движения).
+            </p>
+            <img src="./pictures/img-6-0.png" alt="UwU">
+        </div>
+        <style>
+            #page6 p{
+                font-size: 15px;
+                line-height: 20px;
+                width: 300px;
+            }
+            #page6 img{
+                height: 300px;
+                margin-left: -80px;
+                margin-top: 20px;
+            }
+        </style>
+    </section>
+
+    <section class="slide white page" id="page7">
+        <h2>Аватар (2009)</h2>
+        <div class="columns two">
+            <p>Фильм Джеймса Кэмерона «Аватар» (2009) стал переломным моментом для компьютерной графики в кино. В фильме была создана реалистичная флора и фауна Пандоры, для создания персонажей использовалась усовершенствованная технологии motion capture.
+            </p>
+        </div>
+        <img src="./pictures/img-7-0.png" alt="" id="img-7-0">
+        <img src="./pictures/img-7-1.png" alt="" id="img-7-1">
+        <img src="./pictures/img-7-2.png" alt="" id="img-7-2">
+        <style>
+            #page7 h2{
+                width: 150px;
+            }
+            #page7 p{
+                font-size: 15px;
+                line-height: 20px;
+                width: 170px;
+            }
+            #img-7-0{
+                position: absolute;
+                top: 25px;
+                height: 220px;
+                right: 20px;
+            }
+            #img-7-1{
+                position: absolute;
+                top: 260px;
+                height: 210px;
+                right: 350px;
+            }
+            #img-7-2{
+                position: absolute;
+                top: 250px;
+                height: 300px;
+                right: 10px;
+            }
+        </style>
+    </section>
+
+    <section class="slide green">
+        <img src="./pictures/vfx-cover.png" alt="UwU" class="cover">
+        <h2>VFX</h2>
+    </section>
+
+    <section class="slide page white" id="page8">
+        <h2>Моделирование</h2>
+        <div class="columns two">
+            <p>Моделирование 3D-объектов для кино включает создание цифровых моделей с использованием полигональной сетки, которая формируют форму и детали объекта.
+            </p>
+        </div>
+        <img src="./pictures/img-8-0.png" alt="" id="img-8-0">
+        <img src="./pictures/img-8-1.png" alt="" id="img-8-1">
+        <style>
+            #page8 p{
+                font-size: 15px;
+                line-height: 20px;
+                width: 250px;
+            }
+            #img-8-0{
+                position: absolute;
+                top: 50px;
+                height: 320px;
+                right: 10px;
+            }
+            #img-8-1{
+                position: absolute;
+                top: 300px;
+                height: 220px;
+                left: 20px;
+            }
+        </style>
+    </section>
+
+    <section class="slide page white" id="page9">
+        <h2>Matte painting</h2>
+        <div class="columns two">
+            <p>Создание фонов, в основном без сложного моделирования трехмерных сцен. Matte painting использовался еще в эпоху доцифровых технологий (отсюда и происходит название).
+            </p>
+        </div>
+        <img src="./pictures/img-9-0.png" alt="" id="img-9-0">
+        <img src="./pictures/img-9-1.png" alt="" id="img-9-1">
+        <style>
+            #page9 p{
+                font-size: 15px;
+                line-height: 20px;
+                width: 250px;
+            }
+            #img-9-0{
+                position: absolute;
+                top: 50px;
+                height: 350px;
+                right: 0px;
+            }
+            #img-9-1{
+                position: absolute;
+                top: 300px;
+                height: 270px;
+                left: 30px;
+            }
+        </style>
+    </section>
+
+    <section class="slide white page" id="page10">
+        <h2>Шейдинг и текстурные карты
+        </h2>
+        <div class="columns two">
+            <p>Шейдинг и текстурные карты используются для того, чтобы придать 3D-объектам реалистичные свойства, такие как цвет, блеск и матовость, управляя тем, как они взаимодействуют со светом. Текстурные карты позволяют детализировать участки модели, задавая параметры вроде отражений и прозрачности, создавая впечатление сложных материалов.
+            </p>
+        </div>
+        <img src="./pictures/img-10-0.png" alt="" id="img-10-0">
+        <img src="./pictures/img-10-1.png" alt="" id="img-10-1">
+        <style>
+            #page10 h2{
+                width: 200px;
+            }
+            #page10 p{
+                font-size: 15px;
+                line-height: 20px;
+                width: 200px;
+            }
+            #img-10-0{
+                position: absolute;
+                top: 50px;
+                height: 300px;
+                right: 0px;
+            }
+            #img-10-1{
+                position: absolute;
+                top: 380px;
+                height: 250px;
+                left: 320px;
+            }
+        </style>
+    </section>
+
+    <section class="slide page white">
+        <h2>Симуляция</h2>
+        <div class="columns two">
+            <ul>
+                <li>Симуляция частиц</li>
+                <li>Симуляция объектов </li>
+            </ul>
+        </div>
+        <img src="./pictures/img-11-0.png" alt="" id="img-11-0">
+        <img src="./pictures/img-11-1.png" alt="" id="img-11-1">
+        <style>
+            #img-11-0{
+                position: absolute;
+                top: 50px;
+                height: 300px;
+                right: 10px;
+            }
+            #img-11-1{
+                position: absolute;
+                top: 300px;
+                height: 300px;
+                left: 150px;
+                border: 13px solid white;
+                border-radius: 5px;
+            }
+        </style>
+        </style>
+    </section>
+
+    <section class="slide white page" id="page12">
+        <h2>Свет</h2>
+        <div class="columns two">
+            <p>Свет в компьютерной графике играет критически важную роль в создании реалистичных изображений, так как он определяет, как объекты выглядят в сцене и взаимодействуют друг с другом. Используются различные технологии, такие как глобальное освещение, трассировка лучей и запеченные карты света.
+            </p>
+        </div>
+        <img src="./pictures/img-12-0.png" alt="" id="img-12-0">
+        <img src="./pictures/img-12-1.png" alt="" id="img-12-1">
+        <style>
+            #page12 p{
+                font-size: 15px;
+                line-height: 20px;
+                width: 450px;
+            }
+            #img-12-0{
+                position: absolute;
+                top: 30px;
+                height: 370px;
+                right: 10px;
+            }
+            #img-12-1{
+                position: absolute;
+                top: 280px;
+                height: 250px;
+                left: 100px;
+            }
+        </style>
+    </section>
+
+    <section class="slide page white" id="page13">
+        <h2>Рендер и композитинг</h2>
+        <div class="columns two">
+            <p>Рендеринг в кино — это процесс создания финальных изображений или анимации на основе 3D-моделей и эффектов, что позволяет превратить цифровые данные в реалистичные сцены. Композитинг объединяет эти сгенерированные элементы с отснятыми кадрами, создавая единый визуально целостный кадр.
+            </p>
+            <img src="./pictures/img-13-0.png" alt="">
+        </div>
+        <style>
+            #page13 h2{
+                width: 250px;
+            }
+            #page13 p{
+                font-size: 15px;
+                line-height: 20px;
+                width: 250px;
+            }
+            #page13 img{
+                height: 450px;
+                margin-top: -100px;
+                margin-left: 50px;
+            }
+        </style>
+    </section>
+
+    <section class="slide white page" id="page14">
+        <h2>2-D Графика</h2>
+        <div class="columns two">
+            <div>
+                <p>В основном всю графика, которая используется в кинематографе, можно отнести к 3D-графике. Но есть редкие исключения.</p>
+                <p>2D-графика преимущественно используются для создания уникального визуального стиля.</p>
+            </div>
+        </div>
+        <img src="./pictures/img-14-0.png" alt="" id="img-14-0">
+        <img src="./pictures/img-14-1.png" alt="" id="img-14-1">
+        <style>
+            #page14 p {
+                font-size: 15px;
+                line-height: 20px;
+                width: 250px;
+            }
+            #img-14-0{
+                position: absolute;
+                top: 50px;
+                height: 250px;
+                right: 50px;
+            }
+            #img-14-1{
+                position: absolute;
+                top: 320px;
+                height: 250px;
+                left: 100px;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="page15">
+        <h2>Софт</h2>
+        <table>
+            <tr>
+                <th>Шейдинг и текстурирование</th>
+                <th>FX</th>
+            </tr>
+            <tr>
+                <th>
+                    <ul>
+                        <li>Substance 3D Painter</li>
+                        <li>Mari</li>
+                    </ul>
+                </th>
+                <th>                    
+                    <ul>
+                        <li>Houdini</li>
+                        <li>Maya</li>
+                    </ul>
+                </th>
+            </tr>
+            <tr>
+                <th>Моделирование</th>
+                <th>Рендеринг</th>
+            </tr>
+            <tr>
+                <th>
+                    <ul>
+                        <li>Maya</li>
+                        <li>3Ds Max</li>
+                        <li>Zbrush</li>
+                        <li>Modo</li>
+                        <li>Blender</li>
+                    </ul>
+                </th>
+                <th>
+                    <ul>
+                        <li>Arnold</li>
+                        <li>RenderMan</li>
+                        <li>Mantra/Karma</li>
+                        <li>V-Ray</li>
+                    </ul>
+                </th>
+            </tr>
+        </table>
+        <style>
+            #page15 li{
+                font-weight: 400;
+                font-size: 18px;
+            }
+
+            #page15 ul{
+                margin-left: 20px;
+            }
+        </style>
+    </section>
+
+    <section class="slide edge" id="end">
+        <img class="cover" src="./pictures/edge-cover.png" alt="UwU">
+        <h2>Спасибо за внимание!</h2>
+        <style>
+            #end h2{
+                margin-top: 137px;
+            }
+        </style>
+    </section>
+
+    <div class="progress"></div>
+
+    <script src="shower/shower.js"></script>
+    <!-- Copyright © 3000 Yours Truly, Famous Inc. -->
+
+</body>
+</html>
